@@ -1,4 +1,4 @@
-//Ê¹ÓÃqsortº¯Êı½øĞĞÅÅĞò 
+//ä½¿ç”¨qsortå‡½æ•°è¿›è¡Œæ’åº 
 #include <stdio.h>
 #include <stdlib.h>
 #define NUM 40
@@ -26,7 +26,7 @@ void fillarray(double ar[], int n)
 	int index;
 	
 	for(index = 0; index < n; index ++)
-	    ar[index] = (double) rand()/((double) rand() + 0.1);      //Ê¹ÓÃrand£¨£©º¯ÊıÉú³ÉËæ»úÊı×é 
+	    ar[index] = (double) rand()/((double) rand() + 0.1);      //ä½¿ç”¨randï¼ˆï¼‰å‡½æ•°ç”Ÿæˆéšæœºæ•°ç»„ 
 	
 }
 
@@ -46,7 +46,7 @@ void showarray(const double ar[], int n)
 
 int mycomp(const void * p1, const void * p2)
 {
-	//ÒªÊ¹ÓÃÖ¸ÏòdoubleÀàĞÍµÄÖ¸ÕëÀ´·ÃÎÊÕâÁ½¸öÖµ 
+	//è¦ä½¿ç”¨æŒ‡å‘doubleç±»å‹çš„æŒ‡é’ˆæ¥è®¿é—®è¿™ä¸¤ä¸ªå€¼ 
 	const double * a1 = (const double *)p1;
 	const double * a2 = (const double *)p2;
 	
@@ -57,3 +57,4 @@ int mycomp(const void * p1, const void * p2)
 	else
 	    return 1;
 }
+//still a test
